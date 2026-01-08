@@ -1,23 +1,20 @@
-// RANDOM NUMBER GENERATOR
+// ternary operator = a shortcut to if{} and else{} statments
+// helps to assign a variable based on a condition
+// condtion ? codeIfTrue : codeIfFalse;
 
-const myButton = document.getElementById("myButton");
-const label1 = document.getElementById("label1");
-const label2 = document.getElementById("label2");
-const label3 = document.getElementById("label3");
+// let age = 21;
+// let message = age >= 18 ? "You're an adult" : "You're a minor";
 
-const min = 1;
-const max = 6;
-let randomNum1;
-let randomNum2;
-let randomNum3;
+// console.log(message);
 
+// let time = 16;
+// let greeting = time < 12 ? "Good morning!" : "Good afternoon!";
+// console.log(greeting);
 
-myButton.onclick = function(){
-    randomNum1 = Math.floor(Math.random() * max) + min;
-    randomNum2 = Math.floor(Math.random() * max) + min;
-    randomNum3 = Math.floor(Math.random() * max) + min;
-    label1.textContent= randomNum1;
-    label2.textContent= randomNum2;
-    label3.textContent= randomNum3;
+// let isStudent = true;
+// let message = isStudent ? "You are a student" : "You are not a student";
+// console.log(message);
 
-}
+let purchaseAmount = 125;
+let discount = purchaseAmount >= 100 ? 10 : 0;
+console.log(`Your total is $${purchaseAmount - purchaseAmount * (discount/100)}`);
