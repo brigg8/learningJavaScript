@@ -1,18 +1,24 @@
-// String methods = allow you to manipulate and work with text (strings)
+// string slicing = creating a substring from a portion of another string
+// string.slice(start, end)
 
-let phoneNumber = "123-456-7890";
+// const fullName = "Brandon Riggione";
+// let firstName = fullName.slice(0, fullName.indexOf(" "));
 
-// phoneNumber = phoneNumber.replaceAll("-", "/");
+// let lastName = fullName.slice(fullName.indexOf(" ") + 1);
 
-/*
-    padds the start of a strings to make the string 15 characters long
-// phoneNumber = phoneNumber.padStart(15, "0");
-*/
+// let firstChar = fullName.slice(0,1);
 
-/*
-    padds the end of a strings to make the string 15 characters long
-*/
-// phoneNumber = phoneNumber.padEnd(15, "0");
+// let lastChar = fullName.slice(-1);
 
+// console.log(firstName);
+// console.log(lastName);
+// console.log(firstChar);
+// console.log(lastChar);
 
-console.log(phoneNumber);
+const email = "brandonriggione22@gmail.com";
+
+let username = email.slice(0, email.indexOf("@"));
+let extension = email.slice(email.indexOf("@") + 1);
+
+console.log(username);
+console.log(extension);
