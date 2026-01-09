@@ -1,18 +1,25 @@
-// String methods = allow you to manipulate and work with text (strings)
+// for loop = repeat some code a LIMITED amount of times
 
-let phoneNumber = "123-456-7890";
+// for(let i = 10; i > 0; i-=3){
+//     console.log(i);
+// }
 
-// phoneNumber = phoneNumber.replaceAll("-", "/");
+// console.log("HAPPY NEW YEAR!");
 
-/*
-    padds the start of a strings to make the string 15 characters long
-// phoneNumber = phoneNumber.padStart(15, "0");
-*/
+// for(let i = 1; i <= 20; i++){
+//     if(i == 13 ){
+//         continue;
+//     }
+//     else{
+//         console.log(i);
+//     }
+// }
 
-/*
-    padds the end of a strings to make the string 15 characters long
-*/
-// phoneNumber = phoneNumber.padEnd(15, "0");
-
-
-console.log(phoneNumber);
+// for(let i = 1; i <= 20; i++){
+//     if(i == 13 ){
+//         break;
+//     }
+//     else{
+//         console.log(i);
+//     }
+// }
