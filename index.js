@@ -1,18 +1,40 @@
-// String methods = allow you to manipulate and work with text (strings)
+// NUMBER GUESSING GAME
 
-let phoneNumber = "123-456-7890";
+const minNum = 1;
 
-// phoneNumber = phoneNumber.replaceAll("-", "/");
+const maxNum = 100;
 
-/*
-    padds the start of a strings to make the string 15 characters long
-// phoneNumber = phoneNumber.padStart(15, "0");
-*/
+const answer = Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum;
 
-/*
-    padds the end of a strings to make the string 15 characters long
-*/
-// phoneNumber = phoneNumber.padEnd(15, "0");
+console.log(answer);
 
+let attempts = 0;
+let guess;
 
-console.log(phoneNumber);
+let running = true;
+
+while(running){
+
+    guess = window.prompt(`Guess a number between ${minNum} - ${maxNum}`);
+    guess = Number(guess); 
+
+    if(isNaN(guess)){
+        window.alert("Please enter a valid number");
+    }
+    else if(guess < minNum || guess > maxNum) {
+        window.alert("Please enter a valid number");
+    }
+    else{
+        attempts++;
+        if(guess < answer){
+            window.alert("TOO LOW! TRY AGAIN!");
+        }
+        else if(guess > answer){
+            window.alert("TOO HIGH! TRY AGAIN!");
+        }
+        else{
+            window.alert(`CORRECT! the answer was ${answer}. It took you ${attempts} attempts`);
+            running = false;
+        }
+    }
+}
