@@ -1,18 +1,25 @@
-// String methods = allow you to manipulate and work with text (strings)
-
-let phoneNumber = "123-456-7890";
-
-// phoneNumber = phoneNumber.replaceAll("-", "/");
-
-/*
-    padds the start of a strings to make the string 15 characters long
-// phoneNumber = phoneNumber.padStart(15, "0");
-*/
-
-/*
-    padds the end of a strings to make the string 15 characters long
-*/
-// phoneNumber = phoneNumber.padEnd(15, "0");
+// Method Chaining = Calling one method after another in one continous line of code.
 
 
-console.log(phoneNumber);
+// let username = window.prompt("Enter your username: ");
+
+// NO METHOD CHAINING
+
+// let username = window.prompt("Enter your username: ");
+
+// username = username.trim();
+// let letter = username.charAt(0);
+// letter = letter.toUpperCase();
+
+// let extraChars = username.slice(1);
+// extraChars = extraChars.toLowerCase();
+// username = letter + extraChars;
+
+// console.log(username);
+
+
+// METHOD CHAINING
+
+// username = username.trim().charAt(0).toUpperCase() + username.trim().slice(username.slice(1).toLowerCase());
+
+// console.log(username);
