@@ -1,23 +1,18 @@
-// RANDOM NUMBER GENERATOR
+// String methods = allow you to manipulate and work with text (strings)
 
-const myButton = document.getElementById("myButton");
-const label1 = document.getElementById("label1");
-const label2 = document.getElementById("label2");
-const label3 = document.getElementById("label3");
+let phoneNumber = "123-456-7890";
 
-const min = 1;
-const max = 6;
-let randomNum1;
-let randomNum2;
-let randomNum3;
+// phoneNumber = phoneNumber.replaceAll("-", "/");
+
+/*
+    padds the start of a strings to make the string 15 characters long
+// phoneNumber = phoneNumber.padStart(15, "0");
+*/
+
+/*
+    padds the end of a strings to make the string 15 characters long
+*/
+// phoneNumber = phoneNumber.padEnd(15, "0");
 
 
-myButton.onclick = function(){
-    randomNum1 = Math.floor(Math.random() * max) + min;
-    randomNum2 = Math.floor(Math.random() * max) + min;
-    randomNum3 = Math.floor(Math.random() * max) + min;
-    label1.textContent= randomNum1;
-    label2.textContent= randomNum2;
-    label3.textContent= randomNum3;
-
-}
+console.log(phoneNumber);
