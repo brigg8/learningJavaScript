@@ -1,18 +1,50 @@
-// String methods = allow you to manipulate and work with text (strings)
+// while loop = repeat some code WHILE some condition it true
 
-let phoneNumber = "123-456-7890";
+// let username = "";
 
-// phoneNumber = phoneNumber.replaceAll("-", "/");
+// while(username == "" || username === null){
+//     username = window.prompt(`Enter your name`);
+// }
 
-/*
-    padds the start of a strings to make the string 15 characters long
-// phoneNumber = phoneNumber.padStart(15, "0");
-*/
+// console.log(`Hello ${username}`);
 
-/*
-    padds the end of a strings to make the string 15 characters long
-*/
-// phoneNumber = phoneNumber.padEnd(15, "0");
+// let username;
 
+// do{
+//     username = window.prompt(`Enter your name`);
+// }while(username == "" || username === null)
 
-console.log(phoneNumber);
+// console.log(`Hello ${username}`);
+
+let loggedIn = false;
+let username;
+let password;
+
+// while(!loggedIn){
+//     username = window.prompt(`Enter your username`);
+//     password = window.prompt(`Enter your password`);
+
+//     if(username === "myUsername" && password === "myPassword"){
+//         loggedIn = true;
+//         console.log("You are logged in!");
+    
+//     }
+//     else{
+//         console.log("Invalid credential! Please try again");
+//     }
+// }
+
+do{
+    username = window.prompt(`Enter your username`);
+    password = window.prompt(`Enter your password`);
+
+    if(username === "myUsername" && password === "myPassword"){
+        loggedIn = true;
+        console.log("You are logged in!");
+    
+    }
+    else{
+        console.log("Invalid credential! Please try again");
+    }
+
+}while(!loggedIn)
