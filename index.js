@@ -1,18 +1,24 @@
-// String methods = allow you to manipulate and work with text (strings)
+// logical operators = used to combine or manipulate boolean values
+//                     (true or false)
+//                      And = &&
+//                      OR = ||
+//                      NOT = !
 
-let phoneNumber = "123-456-7890";
+// const temp = -250;
 
-// phoneNumber = phoneNumber.replaceAll("-", "/");
+// if(temp <= 0 || temp > 30){
+//     console.log("The weather is BAD");
+// }
+// else{
+//         console.log("The weather is BAD");
 
-/*
-    padds the start of a strings to make the string 15 characters long
-// phoneNumber = phoneNumber.padStart(15, "0");
-*/
+// }
 
-/*
-    padds the end of a strings to make the string 15 characters long
-*/
-// phoneNumber = phoneNumber.padEnd(15, "0");
+const isSunny = true;
 
-
-console.log(phoneNumber);
+if(!isSunny){
+    console.log("It is CLOUDY");
+}
+else{
+    console.log("It is SUNNY");
+}
