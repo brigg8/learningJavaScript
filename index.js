@@ -1,18 +1,24 @@
-// String methods = allow you to manipulate and work with text (strings)
+// TEMPERATURE CONVERSION PROGRAM
 
-let phoneNumber = "123-456-7890";
+const textBox = document.getElementById("textBox");
+const toFahrenheit = document.getElementById("toFahrenheit");
+const toCelsius = document.getElementById("toCelsius");
+const result = document.getElementById("result");
+let temp;
+function convert(){
 
-// phoneNumber = phoneNumber.replaceAll("-", "/");
+    if(toFahrenheit.checked){
+        temp = Number(textBox.value);
+        temp = temp * 9/5 + 32;
+        result.textContent = temp.toFixed(1) + "°F"
 
-/*
-    padds the start of a strings to make the string 15 characters long
-// phoneNumber = phoneNumber.padStart(15, "0");
-*/
-
-/*
-    padds the end of a strings to make the string 15 characters long
-*/
-// phoneNumber = phoneNumber.padEnd(15, "0");
-
-
-console.log(phoneNumber);
+    }
+    else if(toCelsius.checked){
+        temp = Number(textBox.value);
+        temp = (temp - 32) * (5/9);
+        result.textContent = temp.toFixed(1) + "°C";
+    }
+    else{
+        result.textContent = "Select a unit";
+    }
+}

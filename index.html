@@ -7,11 +7,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button id="myButton">roll</button><br>
-    <label id="label1" class="myLabels"></label><br>
-    <label id="label2" class="myLabels"></label><br>
-    <label id="label3" class="myLabels"></label><br>
+   <form>
+        <h1>Temperature conversion:</h1>
+        <input type="number" id="textBox" value="0"><br>
 
+        <input type="radio" id="toFahrenheit" name="unit">
+        <label for="toFahrenheit">Celsius ➡️ Fahrenheit</label><br>
+
+        <input type="radio" id="toCelsius" name="unit">
+        <label for="toCelsius">Fahrenheit ➡️ Celsisus</label><br>
+
+        <button type="button" onclick="convert()">submit</button>
+        <p id="result">Select a unit</p>
+   </form>
+   
     <script src="index.js"></script>
 </body>
 </html>
