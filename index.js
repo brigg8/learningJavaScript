@@ -1,18 +1,19 @@
-// String methods = allow you to manipulate and work with text (strings)
+// variable scope = where a variable is recongnized
+// and accessible (local vs global)
 
-let phoneNumber = "123-456-7890";
+// Local variable is only accessible in the function.
+// Global is outside of functions
+// When looking for a variable called by a function it will look local first and if it doesnt find it locally it will look globally outside the function.
+let x = 3;
+function1();
+function2();
+function function1(){
+    let x = 1;
+    console.log(x);
+}
 
-// phoneNumber = phoneNumber.replaceAll("-", "/");
+function function2(){
+    let x = 2;
+    console.log(x);
+}
 
-/*
-    padds the start of a strings to make the string 15 characters long
-// phoneNumber = phoneNumber.padStart(15, "0");
-*/
-
-/*
-    padds the end of a strings to make the string 15 characters long
-*/
-// phoneNumber = phoneNumber.padEnd(15, "0");
-
-
-console.log(phoneNumber);
